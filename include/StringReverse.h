@@ -13,7 +13,9 @@ namespace CPPLondonUni {
 
         bool operator==(const std::string& other) const noexcept;
 
-        operator std::string() const;
+        operator std::string() const &;
+
+        operator std::string() &&;
     private:
         std::string revStr;
     };
